@@ -1,0 +1,9 @@
+User-agent: Yandex
+Disallow: /src
+Sitemap: https://www.onliner.by/sitemap.xml
+
+User-agent: *
+Disallow: /
+Sitemap: https://www.onliner.by/sitemap.xml
+
+

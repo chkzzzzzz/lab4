@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Карта сайта — удобная навигация по страницам. Быстрый доступ к главным разделам: новости, статьи, контакты, о нас, политика конфиденциальности.">
+    <meta name="keywords" content="карта сайта, навигация, структура сайта, разделы, главная страница, статьи, контакты, политика конфиденциальности">
+    <meta name="author" content="Название вашей компании">
+    <title>Карта сайта - Полная навигация по сайту</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #004080;
+            font-size: 32px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        p.subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .sitemap-list li {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            transition: background 0.3s;
+        }
+
+        .sitemap-list li:hover {
+            background: #f0f8ff;
+        }
+
+        .sitemap-list a {
+            text-decoration: none;
+            color: #004080;
+            font-size: 18px;
+            font-weight: bold;
+            flex-grow: 1;
+            padding-left: 10px;
+            transition: color 0.3s;
+        }
+
+        .sitemap-list a:hover {
+            color: #cc0000;
+        }
+
+        .sitemap-list i {
+            font-size: 22px;
+            color: #004080;
+        }
+
+        .seo-text {
+            margin-top: 30px;
+            text-align: left;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .seo-text h2 {
+            font-size: 22px;
+            color: #004080;
+        }
+
+        .seo-text p {
+            line-height: 1.6;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            p.subtitle {
+                font-size: 16px;
+            }
+
+            .sitemap-list a {
+                font-size: 16px;
+            }
+
+            .sitemap-list i {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://a.travelcdn.mts.ru/travel-media/minsk_6b3e3e183a.webp" alt="Городское СМИ" class="logo">
+
+        <h1>Карта сайта</h1>
+        <p class="subtitle">Навигация по сайту для удобного доступа ко всем разделам</p>
+
+        <ul class="sitemap-list">
+            <li><i class="fas fa-home"></i> <a href="index.html">Главная</a></li>
+            <li><i class="fas fa-newspaper"></i> <a href="news.html">Новости</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="contacts.html">Контакты</a></li>
+            <li><i class="fas fa-question-circle"></i> <a href="fag.html">FAQ</a></li>
+        </ul>
+
+        <div class="image-container">
+        </div>
+
+        <div class="seo-text">
+            <h2>Что такое карта сайта?</h2>
+            <p>Карта сайта — это структурированный список всех разделов веб-ресурса, который помогает пользователям и поисковым системам быстро находить нужную информацию. Наличие карты сайта положительно влияет на SEO-продвижение, улучшая индексацию страниц.</p>
+
+            <h2>Зачем нужна карта сайта?</h2>
+            <p>Основные преимущества карты сайта:</p>
+            <ul>
+                <li>Повышает удобство навигации для посетителей.</li>
+                <li>Упрощает индексацию сайта поисковыми системами (Google, Яндекс).</li>
+                <li>Способствует улучшению SEO и повышению позиций в поисковой выдаче.</li>
+            </ul>
+
+            <h2>Как пользоваться картой сайта?</h2>
+            <p>Для перехода в нужный раздел кликните по соответствующей ссылке. Здесь представлены основные категории: <strong>новости</strong>, <strong>статьи</strong>, <strong>контакты</strong>, <strong>FAQ</strong> и другие. Используйте карту сайта для быстрого доступа к информации.</p>
+
+            <h2>Как улучшить SEO с помощью карты сайта?</h2>
+            <p>Чтобы повысить видимость сайта в поисковых системах:</p>
+            <ul>
+                <li>Добавьте XML-карту сайта в <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a>.</li>
+                <li>Оптимизируйте заголовки и мета-теги на всех страницах.</li>
+                <li>Используйте ключевые слова и качественный контент.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

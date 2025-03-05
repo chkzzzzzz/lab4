@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свяжитесь с нами: адрес, телефон, email. Заполните форму обратной связи для получения консультации.">
+    <meta name="keywords" content="контакты, обратная связь, адрес, телефон, email, карта">
+    <meta name="author" content="News City">
+    <title>Контакты - Свяжитесь с нами</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #004080;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #004080;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #cc0000;
+        }
+
+        .map {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://old.alrf.ru/region54/wp-content/uploads/sites/27/2015/09/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.jpg" alt="Логотип News City" class="logo">
+        <h1>Контакты</h1>
+        <p>Свяжитесь с нами, чтобы узнать больше о наших услугах.</p>
+        
+        <div class="contact-info">
+            <p><strong>Адрес:</strong> г. Минск, ул. Прессы, 10</p>
+            <p><strong>Телефон:</strong> +375 (29) 123-45-67</p>
+            <p><strong>Email:</strong> <a href="mailto:info@news-city.by">info@news-city.by</a></p>
+            <p><strong>Редакция:</strong> <a href="mailto:редакция@news-city.by">редакция@news-city.by</a></p>
+        </div>
+
+        <h2>Мы в соцсетях:</h2>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2341.2556214812273!2d27.561831416382104!3d53.90060198009496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfebac0de98b%3A0x78e8f9a707e13d4d!2z0YPQuy4g0J_QtdC60YHRgtCw0L3RgdC60L7Qs9C-LCAxMCwg0JzQvtGB0LrQstCwLCDQnNC-0YHQutCy0LA!5e0!3m2!1sru!2sby!4v1632746605805!5m2!1sru!2sby" allowfullscreen></iframe>
+        </div>
+
+        <h2>Свяжитесь с нами</h2>
+        <form class="contact-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
