@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(100370001, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/100370001" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Последние новости города: события, мероприятия, открытия и многое другое.">
@@ -15,7 +32,7 @@
         }
         .container {
             max-width: 800px;
-            margin: 50px auto;
+            margin: 20px auto;
             padding: 20px;
             background: #ffffff;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -23,14 +40,14 @@
         }
         h1 {
             color: #004080;
-            font-size: 36px;
+            font-size: 32px;
             margin-bottom: 20px;
             text-align: center;
         }
         .news-item {
             display: flex;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .news-item img {
             width: 150px;
@@ -57,6 +74,56 @@
         .news-item a:hover {
             text-decoration: underline;
         }
+
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-buttons a button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .social-buttons a button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .news-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .news-item img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            .news-item h2 {
+                font-size: 18px;
+            }
+            .news-item p {
+                font-size: 14px;
+            }
+            .social-buttons a button {
+                width: 100%; 
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,22 +145,18 @@
                 <p>В выходные в нашем городе прошел фестиваль уличной музыки, на котором выступили как местные, так и приглашенные артисты. <a href="#">Читать далее...</a></p>
             </div>
         </div>
+    </div>
 
-        <div class="news-item">
-            <img src="https://socialtutors.ru/uploads/posts/2020-05/1589988187_chelovek-i-priroda.jpg" alt="Новый парк в городе">
-            <div>
-                <h2>Новый парк в городе</h2>
-                <p>Открыт новый городской парк с зелеными зонами, детскими площадками и современными спортивными сооружениями. <a href="#">Читать далее...</a></p>
-            </div>
-        </div>
-
-        <div class="news-item">
-            <img src="https://youfrom.ru/wp-content/uploads/2020/09/pexels-pixabay-164821.jpg" alt="Фестиваль уличной музыки в Санкт-Петербурге">
-            <div>
-                <h2>Фестиваль уличной музыки в Санкт-Петербурге</h2>
-                <p>В Санкт-Петербурге прошел ежегодный фестиваль уличной музыки, собравший множество талантливых исполнителей. <a href="#">Читать далее...</a></p>
-            </div>
-        </div>
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/news" target="_blank">
+            <button>Поделиться в Facebook</button>
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://example.com/news&text=Проверьте%20этот%20сайт!" target="_blank">
+            <button>Поделиться в Twitter</button>
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/news&title=Новости%20города%20-%20Городской%20СМИ" target="_blank">
+            <button>Поделиться в LinkedIn</button>
+        </a>
     </div>
 </body>
 </html>
